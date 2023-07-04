@@ -1,16 +1,24 @@
-console.log('Try FizzBuzz.......')
+console.log('FizzBuzz project.......')
+
+//Instead, set variables to for each fizz, buzz, bang etc...
+//as well as whether or not to print number
 
 for (let i = 1; i < 101; i++) {
-    if (i%15 == 0) {
-        console.log('FizzBuzz')
+    let three = ""
+    let five = ""
+    let seven = ""
+    let printnum = i.toString()
+    if (i%3 === 0) {
+        three = "Fizz"
+        printnum = ""
     }
-    else if (i%3 == 0) {
-        console.log('Fizz')
+    if (i%5 === 0) {
+        five = "Buzz"
+        printnum = ""
     }
-    else if (i%5 == 0) {
-        console.log('Buzz');
+    if (i%7 === 0) {
+        seven = "Bang"
+        printnum = ""
     }
-    else {
-        console.log(i);
-    }
+    console.log(printnum + three + five + seven)
 }
